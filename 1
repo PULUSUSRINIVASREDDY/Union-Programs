@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+union employee
+{
+	char name;
+	int id;
+	float salary;
+};
+
+int main()
+{
+	union employee hr;
+	
+	printf("\n enter the employee details\n");
+
+	
+	printf("\nenter the name\n");
+	scanf("\n%s",hr.name);
+	printf("\nenter the employee id\n");
+	scanf("\n%d",&hr.id);
+	printf("enter the employe salary\n");
+	scanf("\n%f",&hr.salary);
+	return 0;
+	/*
+	
+	printf("\nenter the name id and salary\n");
+	scanf("\n%c\n%d\n%f",&hr.name,&hr.id,&hr.salary);
+
+	printf("\n%c\n%d\n%f",hr.name,hr.id,hr.salary);
+*/
+}
